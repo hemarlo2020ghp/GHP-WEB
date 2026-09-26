@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GHP | Agencia Digital</title>
+    <meta
+      name="description"
+      content="GHP es una agencia digital que crea sitios web modernos, funcionales y orientados a resultados."
+    />
+    <meta name="theme-color" content="#07111f" />
+    <meta property="og:title" content="GHP | Agencia Digital" />
+    <meta
+      property="og:description"
+      content="Diseño, desarrollo y estrategia digital para marcas que quieren crecer."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.ghpartners.es" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="logo">GHP</div>
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <a class="btn btn-primary" href="#contacto">Solicitar presupuesto</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Diseño · Desarrollo · Resultados</span>
+            <h1>Tu presencia digital, lista para crecer.</h1>
+            <p>
+              Creamos páginas web modernas, rápidas y enfocadas en convertir visitas en clientes.
+            </p>
+            <div class="cta-group">
+              <a class="btn btn-primary" href="#contacto">Comenzar</a>
+              <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
+            </div>
+            <ul class="stats" aria-label="Estadísticas de la empresa">
+              <li><strong>+120</strong><span>Proyectos</span></li>
+              <li><strong>4.9/5</strong><span>Valoración</span></li>
+              <li><strong>24h</strong><span>Respuesta</span></li>
+            </ul>
+          </div>
+          <div class="hero-visual" aria-label="Vista previa del sitio web">
+            <div class="mockup">
+              <div class="mockup-header">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mockup-body">
+                <div class="panel large"></div>
+                <div class="panel-row">
+                  <div class="panel small"></div>
+                  <div class="panel small"></div>
+                </div>
+                <div class="panel medium"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Servicios</span>
+            <h2>Soluciones para impulsar tu marca</h2>
+          </div>
+          <div class="cards">
+            <article class="card">
+              <div class="icon">◎</div>
+              <h3>Landing Pages</h3>
+              <p>Diseños orientados a ventas para captar leads y reforzar tu oferta.</p>
+            </article>
+            <article class="card">
+              <div class="icon">▣</div>
+              <h3>Sitios corporativos</h3>
+              <p>Presencia sólida, clara y profesional para generar confianza desde el primer vistazo.</p>
+            </article>
+            <article class="card">
+              <div class="icon">✦</div>
+              <h3>E-commerce</h3>
+              <p>Experiencias de compra optimizadas para vender mejor y facilitar la conversión.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos" class="section alt">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Proyectos</span>
+            <h2>Elegimos claridad, velocidad y estilo</h2>
+          </div>
+          <div class="showcase">
+            <div class="project">
+              <div class="project-box box-one"></div>
+              <div>
+                <h3>Brand Studio</h3>
+                <p>Rediseño para una marca moderna con enfoque en identidad visual y conversión.</p>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-box box-two"></div>
+              <div>
+                <h3>Nova Commerce</h3>
+                <p>Plataforma de ventas con mejor flujo de compra y presencia premium.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonial-wrap">
+        <div class="container testimonial">
+          <p>
+            “El equipo de GHP entendió exactamente lo que necesitábamos y entregó una web que se siente moderna, rápida y muy clara para nuestros clientes.”
+          </p>
+          <strong>— María López, Fundadora</strong>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacto" class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">GHP</div>
+          <p>Diseñamos experiencias digitales que conectan con tu audiencia.</p>
+        </div>
+        <div class="contact-box">
+          <h3>Hablemos</h3>
+          <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+            <input type="email" id="email" name="email" placeholder="Tu correo" required />
+            <textarea id="message" name="message" placeholder="Cuéntanos tu proyecto" required></textarea>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+          <p id="form-message" class="form-message" aria-live="polite"></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
